@@ -28,4 +28,5 @@ def handle_message(message):
         print(f"ERREUR: {e}")
         bot.reply_to(message, "Erreur technique, veuillez reessayer.")
 
-bot.infinity_polling()
+bot.remove_webhook()
+bot.infinity_polling(timeout=10, long_polling_timeout=5)
