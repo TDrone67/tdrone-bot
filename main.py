@@ -20,7 +20,7 @@ def handle_message(message):
     try:
         prompt = SYSTEM_PROMPT + "\n\nDemande : " + message.text
         response = client.models.generate_content(
-            model='gemini-1.5-flash',
+            model='gemini-2.0-flash',
             contents=prompt
         )
         bot.reply_to(message, response.text)
