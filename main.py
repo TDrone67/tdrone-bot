@@ -25,7 +25,7 @@ def handle_message(message):
         )
         bot.reply_to(message, response.text)
     except Exception as e:
-      print(f"ERREUR: {e}")
-            bot.reply_to(message, "Erreur technique, veuillez reessayer.")
+        print(f"ERREUR: {e}")
+        bot.reply_to(message, "Erreur technique, veuillez reessayer.")
 
 bot.infinity_polling()
