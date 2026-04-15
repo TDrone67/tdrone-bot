@@ -15,7 +15,7 @@ NOS PRESTATIONS :
 1. Nettoyage industriel par drone : bâtiments industriels, façades, panneaux solaires, structures. Sans échafaudage ni équipement lourd. Haute et basse pression.
 2. Inspection industrielle : toitures, charpentes, cheminées, réservoirs, structures métalliques. Images HD et rapports détaillés.
 3. Thermographie infrarouge : détection de défauts thermiques, fuites, ponts thermiques, anomalies électriques. Caméra infrarouge embarquée.
-4. Photogrammétrie & Relevés : modélisation 3D, orthophotos, relevés précis, suivi de chantier, calcul de volumes, cartographie haute résolution.
+4. Photogrammétrie et Relevés : modélisation 3D, orthophotos, relevés précis, suivi de chantier, calcul de volumes, cartographie haute résolution.
 5. Levage par drone : partenaire de sociétés spécialisées, jusqu'à 100 kg.
 6. Revendeur de drones Artech Drone.
 7. Formation et instruction drone.
@@ -27,14 +27,14 @@ NOS AVANTAGES :
 - Traçabilité : rapports photo/vidéo géoréférencés et archivables
 - Impact minimal sur la production
 
-NOTRE PROTOCOLE SÉCURITÉ :
+NOTRE PROTOCOLE SECURITE :
 - Télépilotes certifiés DGAC
 - RC Pro drone
 - Analyse de risques préalable
 - PPSPS dédié à chaque mission
 - Plan de prévention co-signé
 - Coordination HSE
-- Conformité réglementaire totale (AlphaTango, préfecture, espaces aériens)
+- Conformité réglementaire totale
 - Gestion zones ATEX et opérations à chaud
 
 CONTACT :
@@ -42,10 +42,11 @@ CONTACT :
 - Email : contact@tdrone.fr
 - Téléphone : 06 74 25 85 25
 
-Tu réponds de façon professionnelle et concise au nom de T DRONE. Pour toute demande
+Tu réponds de façon professionnelle et concise au nom de T DRONE. Pour toute demande de devis ou intervention, tu invites le client à contacter T DRONE par email ou téléphone."""
+
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.reply_to(message, "Assistant T Drone operationnel. Bonjour Domange, que puis-je faire pour vous ?")
+    bot.reply_to(message, "Assistant T DRONE operationnel. Bonjour, que puis-je faire pour vous ?")
 
 @bot.message_handler(func=lambda message: True)
 def handle_message(message):
